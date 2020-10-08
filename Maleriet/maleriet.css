@@ -1,0 +1,64 @@
+.flex-container {
+  display: justify;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+h1
+{
+  font-family:helvetica;
+  font-size: 100px;
+  font-weight: bold;
+  color: khaki;
+  text-align: center;
+  background-image:url("pattern.jpg");
+}
+.pensler
+{
+  background-color: mediumspringgreen;
+font-family: Helvetica;
+font-size: 32px;
+font-weight: bold;
+color: white;
+margin-bottom: 20px;
+}
+
+.rammer
+{
+  background-color: lightcoral;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.maling
+{
+  background-color: skyblue;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 20px;
+}
+strong
+{
+  color: blue;
+  font-family: helvetica;
+  font-weight: bold;
+
+ }
+h3
+{
+  font-weight: bold;
+  font-family: helvetica;
+}
+img
+{
+flex-wrap: wrap;
+display: flex;
+}
+p
+{
+  font-family: helvetica;
+}
