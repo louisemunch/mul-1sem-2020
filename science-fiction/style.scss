@@ -1,0 +1,175 @@
+//Variabler generelt
+$bgcolor: #414a4c;
+$myPfontsize: 15px; 
+$myfontfamily: arial;
+$myfontweight: bold;
+$headingfont: 30px;  
+$centeredtext: center;
+$myscificolor: rgb(173, 179, 230);
+$mynavbarfontsize: 20px; 
+$lineheight: 20px;
+$mytextcolor: black;
+
+
+
+
+//Mixin with horizontalNavigationbar 
+@mixin container{
+   width: 100%;
+   display: inline;
+   }
+//Mixin nav
+@mixin navtag {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+//Mixin navigationbar
+@mixin ultag {
+    text-align: center;
+    list-style-type: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 15px; 
+    background-color: $myscificolor;
+}
+@mixin litag {
+    display: inline;
+    font-family: $myfontfamily;
+    font-size: $mynavbarfontsize;
+    font-weight: $myfontweight;
+}
+@mixin atag {
+    color: black;
+    text-decoration: none;
+    padding: 14px;
+}
+//Mixin image
+@mixin image {
+    width: 300px;
+  height:150px;
+} 
+//Mixin columns
+@mixin columns {
+    float: left;
+    width: 450px;
+    padding: 20px;
+    height: 500px;
+    margin:12px;
+    background-color: $myscificolor;
+    box-shadow: 0 0 1vw 0.1vw $myscificolor;
+  }
+  @mixin row {
+    display: table;
+    clear: both;
+  }
+  @mixin rounded-corners ($radius: 10px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+//Mixin content container
+@mixin container-2 {
+    box-shadow: 0 0 1vw 0.1vw $myscificolor;
+    margin-bottom: 5vw;
+    margin-top: 50px;
+    margin-left: 12px;
+    width: 1400px;
+    padding: 20px;
+    background-color: $myscificolor;
+    @include rounded-corners;
+    
+}
+
+
+//Style starts here
+   body {
+    background-image: url("scifi.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -1;
+    font-family: $myfontfamily;
+  
+}
+p {
+    font-size: $myPfontsize;
+    line-height: $lineheight;
+
+  
+}
+//Navigationbar
+.container {
+    @include container;
+
+}
+nav {
+    @include navtag;
+}
+ul {
+    @include ultag;
+}
+li {
+    @include litag;
+}
+
+a {
+    @include atag;
+}
+//Container with SciFi content
+.container-2 {
+    @include container-2;
+}
+//columns
+* {
+    box-sizing: border-box;
+  }
+
+  .column {
+      @include columns;
+@include rounded-corners;
+
+  }
+  
+  .row {
+      @include row;
+  }
+//Image styling
+  img {
+      @include image;
+      @include rounded-corners;
+  }
+
+  //Text styling
+  h2 {
+    font-size: $headingfont;  
+    text-align: $centeredtext;
+    color: $myscificolor;
+    margin-top: 70px;
+
+  }
+  h3 {
+      font-size:$headingfont;
+      text-align: $centeredtext;
+      color: $myscificolor;
+  }
+ h4 {
+     font-size: $myPfontsize;
+     text-align: $centeredtext;
+ }
+ figcaption {
+    font-size: $myPfontsize;
+    line-height: $lineheight;
+    margin-top: 15px;
+color: $mytextcolor;
+ }
+ .footer {
+     margin-top: 25px;
+ }
+.copyright 
+{
+text-align: $centeredtext;
+color: white;
+}
