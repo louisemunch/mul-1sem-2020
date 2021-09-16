@@ -1,0 +1,145 @@
+body {
+    font-family: $my-font;
+   
+}
+
+//Logo
+.custom-logo-link {
+  margin-top: 20px;
+margin-left: $column-left;
+}
+//Navbar
+#primary-menu {
+@include navbar;
+}
+li {
+    a {
+        margin-left: 30px;
+        text-decoration: none;
+       color: $font-color;
+       font-size: 20px;
+       line-height: 24px;
+    }
+}
+
+
+//Welcome column
+.hello {
+ font-weight: 900;
+text-align: center;
+     font-size: 50px;
+     line-height:1.2em;
+     color: $font-color;
+     margin: .67em 0;
+     max-width:900px;
+     margin-left: 150px;
+     margin-top: 70px;
+  }
+
+//Work together columns
+
+.work-1 {
+   @include left-column;
+}
+.work-p  {
+ @include left-p;
+}
+
+//Find columns 
+.find-people {
+   @include right-column; 
+}
+.find-p {
+ @include right-p;
+}
+
+.ideas {
+@include left-column;
+}
+.ideas-p {
+   @include left-p;
+}
+
+.tune {
+    @include right-column;
+}
+.tune-p {
+    @include right-p;
+}
+
+//Images in columns
+.work-image {
+    margin-top: 70px; 
+    margin-right: $column-right;
+}
+.find-image {
+    margin-left: $column-left;
+}
+.ideas-image {
+    margin-right:$column-right;
+}
+.tune-image {
+    margin-left: $column-left;
+}
+
+//Clients 
+.clients {
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 30px;
+}
+.join {
+    font-size: 40px;
+    line-height: 48px;
+   margin-top: 120px;
+}
+.sign-up {
+    font-size: 20px;
+    line-height: 20px;
+}
+//Footer
+
+.wp-block-column {
+justify-content: center;
+margin-left: 90px;
+.link {
+    color: #cf2c28;
+    text-decoration: underline;
+    font-weight: 900;
+}
+}
+.copy {
+    color: $font-color !important;
+}
+
+//Input form
+.row {
+   display: flex;
+   margin-right: -15px;
+   margin-left: 280px;
+   flex-wrap:inherit;
+   align-content:inherit;
+}
+
+.field-label {
+   margin-right: 10px;
+   margin-left: 10px;
+    top: 5px;
+    right: auto;
+    bottom: auto;
+    color: hsla(0,0%,45.3%,.81);
+}
+
+//CONTACT SITE 
+.contact-us {
+    margin-left: 105px;
+    font-size: 50px;
+    line-height: 60px;
+}
+.contact-p {
+    margin-left: 105px;
+}
+.adress {
+    font-size: 20px;
+    line-height: 26px;
+}
