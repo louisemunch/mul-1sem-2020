@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vue.js opgave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!--Opgave 1 - DRUMKIT PLAY-->
+<div id="v-model-basic" class="welcome">
+    <h1>Welcome to this Drumkit Play. Please fill out the input field</h1>
+    <p class="myName" >My name is {{ message }}</p>
+    <input type="text" v-model="message" placeholder="Enter your name" />
+  </div>
+
+  <div id="app" >
+    <button class="w drum">W<img src="images/crash.png" alt="Image of crash drum"></button>
+    <button class="a drum">A<img src="images/kick.png" alt="Image of kick drum"></button>
+    <button class="s drum">S<img src="images/snare.png" alt="Image of snare drum"></button>
+    <button class="d drum">D<img src="images/tom1.png" alt="Image of tom1 drum"></button>
+    <button class="j drum">J<img src="images/tom2.png" alt="Image of tom2 drum"></button>
+    <button class="k drum">K<img src="images/tom3.png" alt="Image of tom3 drum"></button>
+    <button class="l drum">L<img src="images/tom4.png" alt="Image of tom4 drum"></button>
+  </div>
+
+    <!--Opgave 2 - INPUT VALIDATION-->
+ <div id="myform" >
+    <h1>Input validation</h1>
+
+     <div v-if="errors.length < 0" >
+          <ul>
+              <li v-for="errors in errors" style="color:red">{{errors}}</li>
+          </ul>
+     </div>
+<form @submit.prevent="checkform">
+    <label for="name">Your Name</label> <br>
+    <input type="text" v-model="name" placeholder="Enter your name"> 
+    <br>
+    <label for="mail">Your E-mail</label> <br>
+    <input type="text" v-model="email" placeholder="Enter your email">
+    <br>
+    <label for="password">Your password</label> <br>
+    <input type="password" v-model="password" placeholder="Enter your password">
+    <br>
+    <label for="password">Repeat password</label> <br>
+    <input type="password" v-model="repeatPassword" placeholder="Repeat your password">
+    <br>
+    <label for="number">Your phone number</label> <br>
+    <input type="tel" v-model="number" placeholder="Enter your number">
+    <br>
+    <label for="adress">Your adress</label> <br>
+    <input type="text" v-model="adress" placeholder="Enter your adress">
+    <br>
+    <label for="zipbumber">Your zip Number</label> <br>
+    <input type="tel" v-model="zipNumber" placeholder="Enter your zipnumber">
+    <br>
+    <p>Your details are : <br> {{name}} <br>  {{email}} <br> {{password}} <br> {{repeatPassword}}<br>  {{number}} <br>  {{adress}} <br> {{zipNumber}}</p>
+    <input type="submit" value="Submit">
+</form> 
+ </div>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
