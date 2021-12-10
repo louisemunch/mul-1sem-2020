@@ -1,0 +1,16 @@
+/*SNAKE*/
+.snake-body{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("img/game-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+canvas{
+  box-shadow: #341742 20px 10px 50px;
+}

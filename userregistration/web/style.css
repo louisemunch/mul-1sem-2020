@@ -1,0 +1,105 @@
+@charset "UTF-8";
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+/*Her får vi login i midten af siden*/
+.login-box {
+  max-width: 700px;
+  float: none;
+  margin: 150px auto;
+}
+
+/*Her ændres baggrundsfarverne og padding rundt om login*/
+.login-left {
+  background-color: rgba(211, 211, 211, 0.5);
+  padding: 30px;
+}
+
+.login-right {
+  background-color: #fff;
+  padding: 30px;
+}
+
+/*Her ændres baggrundsfarven på inputfelterne i 'Login' form*/
+/*Important bruger man, når man vil overskrive en ekstisterende CSS*/
+.form-control {
+  background-color: transparent !important;
+}
+
+.front-text {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+a {
+  color: #fff !important;
+  font-weight: 700;
+  margin-left: 100px;
+  margin-top: 50px;
+}
+
+h1 {
+  color: #fff !important;
+  text-align: center !important;
+  text-transform: uppercase !important;
+}
+
+.welcome-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 200px;
+  line-height: 50px;
+}
+
+.make-profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*HOME SIDEN*/
+strong {
+  color: #FD4C83;
+  font-style: italic;
+}
+
+.logged-in {
+  line-height: 60px !important;
+  margin-top: 120px !important;
+}
+
+.crud-body {
+  background-image: url("img/game-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.crud-form {
+  background-color: #F3F6FB;
+  margin-left: 460px;
+  margin-top: 10px;
+  margin-right: 460px;
+  padding: 50px;
+  padding-left: 70px;
+}
+
+.input {
+  margin-top: 30px;
+}

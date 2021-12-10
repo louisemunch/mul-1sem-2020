@@ -1,0 +1,39 @@
+@mixin video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+@mixin crud-form {
+    background-color: $crud-background;
+    margin-left: 460px;
+    margin-top: 10px;
+    margin-right: 460px;
+    padding: 50px;
+    padding-left: 70px;
+}
+
+@mixin crud-body {
+    background-image: url("img/game-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin login-left {
+    background-color: rgba(211, 211, 211, 0.5);
+    padding: $padding;
+}
+@mixin login-right {
+    background-color: #fff;
+    padding: $padding; 
+}
+
+@mixin welcome-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    line-height: 50px; 
+}

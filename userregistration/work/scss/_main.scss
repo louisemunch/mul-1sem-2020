@@ -1,0 +1,63 @@
+//Her styler jeg baggrundsvideoen
+#myVideo {
+   @include video;
+  }
+//LOG IN SIDE
+/*Her får vi login i midten af siden*/
+.login-box {
+
+    max-width: 700px;
+    float: none;
+    //Margin auto gør, at boxen bliver horisontalt centreret med en top-margin på 150px
+    margin: $loginbox-margin;
+}
+/*Her ændres baggrundsfarverne og padding rundt om login*/
+.login-left {
+
+   @include login-left;
+}
+
+.login-right {
+   @include login-right;
+}
+
+/*Her ændres baggrundsfarven på inputfelterne i 'Login' form*/
+/*Important bruger man, når man vil overskrive en ekstisterende CSS, da form-control er en bootstrap klasse*/
+.form-control { 
+    background-color: $transparent-background;
+}
+
+
+//INDEX SIDEN
+//Welcome container
+.welcome-container {
+   @include welcome-container;
+}
+.make-profile {
+    display: flex;
+    justify-content: center;
+}
+
+/*HOME SIDEN*/
+strong {
+    color: $strong-color;
+    font-style: italic;
+}
+.logged-in {
+    line-height: $line-height;
+    margin-top: 120px !important;
+}
+
+//CRUD SIDE 
+.crud-body {
+   @include crud-body;
+}
+.crud-form {
+ @include crud-form;
+}
+.input {
+    margin-top: 30px;
+}
+
+
+
