@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knap</title>
+    <link rel="stylesheet" href="style.css">
+ 
+</head>
+<body>
+
+    <div id="box">
+       
+        <form action="/action_page.php">
+            <h1>Skriv til os</h1>
+            <input style="border-top: none; border-bottom: 1px solid #0098BA; border-left: none; border-right: none;" class="input" type="text" id="fname" name="firstname" placeholder="Dit navn">
+        
+            
+            <input style="border-top: none; border-bottom: 1px solid #0098BA; border-left: none; border-right: none; " class="input" type="text" id="lname" name="lastname" placeholder="Dit efternavn">
+        
+          
+            <select  id="country" name="country">
+                <option value="country">Land</option>
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+        
+           
+            <textarea style="border-top: none; border-bottom: 1px solid #0098BA; border-left: none; border-right: none;" class="input" id="subject" name="subject" placeholder="Skriv din besked" style="height:200px"></textarea>
+        
+            <input style="width: 100%; background-color:#0098BA; color: white; " type="submit" value="Send besked">
+          </form>
+
+
+    </div>
+    <button id="knap" >Kontakt os </button>
+    <script src="knap.js" ></script>
+</body>
+</html>
